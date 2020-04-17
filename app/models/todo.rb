@@ -1,6 +1,5 @@
 #todo.rb
-#<input type="checkbox" class="TodoItem-checkBox" <%= todo.completed ? "checked" : "" %> />
-#<p class=<%= todo.completed ? "TodoItem-completedTodoText" : "TodoItem-todoText" %> > <%= todo.todo_text %> </p>
+
 class Todo < ActiveRecord::Base
   def due_today?
     due_date == Date.today
